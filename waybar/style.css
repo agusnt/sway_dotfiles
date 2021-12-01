@@ -1,0 +1,51 @@
+*
+{
+    border:        none;
+    font-family:   "FiraCode Retina";
+    font-size:     12px;
+    box-shadow:    none;
+    text-shadow:   none;
+    transition-duration: 0s;
+}
+
+window#waybar
+{
+    background: #2c2d30;
+    border: 2px;
+}
+
+#workspaces,
+#tray
+{
+    font-weight: bold;
+    color: #fbf1c7;
+}
+
+#workspaces button {
+    padding: 0px;
+    color: #ebdbb2;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding: 0px 8px;
+    border: 2px;
+}
+
+#workspaces button.focused 
+{
+    color: #ebdbb2;
+    background-color: #504945;
+    font-weight: bold;
+}
+
+#pulseaudio,
+#network,
+#pulseaudio,
+#backlight,
+#battery,
+#clock,
+#window
+{
+    color: #ebdbb2;
+    margin-right: 8px;
+    margin-left: 8px;
+}

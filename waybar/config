@@ -1,0 +1,42 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 25,
+    "modules-left": ["sway/workspaces"],
+    "modules-right": ["tray", "network", "pulseaudio", "backlight", "battery", "clock"],
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "🔆 {percent}%",
+    },
+    "battery": {
+        "interval": 60,
+        "format": "🔋 {capacity}%",
+        "max-length": 25
+    },
+    "network": {
+  	    "interface": "wlp3s0",
+  	    "format": "{ifname}",
+  	    "format-wifi": "📶 {essid} ({signalStrength}%)",
+  	    "format-ethernet": "{ifname} ",
+  	    "format-disconnected": "📶 Disconnected",
+  	    "tooltip-format": "{ifname}",
+  	    "tooltip-format-wifi": "📶 {essid} ({signalStrength}%)",
+  	    "tooltip-format-ethernet": "{ifname} ",
+  	    "tooltip-format-disconnected": "📶 Disconnected",
+  	    "max-length": 50
+    },
+    "pulseaudio": {
+  	    "format": "{icon} ({volume}%)",
+  	    "format-bluetooth": "{icon} {volume}%",
+  	    "format-muted": "",
+  	    "scroll-step": 1,
+        "format-icons": {
+            "headphones": "",
+            "default": ["🔈", "🔉", "🔊"]
+        },
+        "format-muted": "🔇",
+  	    "on-click": "pavucontrol",
+        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+}
