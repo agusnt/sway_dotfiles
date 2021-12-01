@@ -10,8 +10,12 @@
         "format": "🔆 {percent}%",
     },
     "battery": {
-        "interval": 60,
+        "interval": 300,
         "format": "🔋 {capacity}%",
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
         "max-length": 25
     },
     "network": {
@@ -38,5 +42,11 @@
         "format-muted": "🔇",
   	    "on-click": "pavucontrol",
         "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+    "clock": {
+        "interval": 60,
+        "format": "{:%d.%m.%y %H:%M (%Z)}",
+        "timezones": ["Europe/Madrid", "Asia/Tokyo"],
+        "max-length": 25
     },
 }
