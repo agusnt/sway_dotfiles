@@ -21,7 +21,8 @@ window#waybar
     color: #fbf1c7;
 }
 
-#workspaces button {
+#workspaces button 
+{
     padding: 0px;
     color: #ebdbb2;
     margin-right: 2px;
@@ -37,13 +38,17 @@ window#waybar
     font-weight: bold;
 }
 
+#workspaces button:hover
+{
+    background: #7c6f64;
+}
+
 #battery.warning
 {
     color: #fabd2f;
     margin-right: 8px;
     margin-left: 8px;
 }
-
 #battery.critical
 {
     color: #fb4934;
