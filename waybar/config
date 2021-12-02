@@ -32,15 +32,15 @@
         "max-length": 25
     },
     "network": {
-  	    "interface": "wlp3s0",
+        "interface": "wlp3s0",
   	    "format": "{ifname}",
-  	    "format-wifi": "<span font='16' rise='-5000'></span> {essid} ({signalStrength}%)",
-  	    "format-ethernet": "<span font='16' rise='-5000'></span>",
-  	    "format-disconnected": "<span font='16' rise='-5000'>睊</span>",
+  	    "format-wifi": "📶 {essid} ({signalStrength}%)",
+  	    "format-ethernet": "{ifname} ",
+  	    "format-disconnected": "📶 Disconnected",
   	    "tooltip-format": "{ifname}",
-  	    "tooltip-format-wifi": "<span font='16' rise='-5000'></span> {essid} ({signalStrength}%)",
-  	    "tooltip-format-ethernet": "<span font='16' rise='-5000'></span>",
-  	    "tooltip-format-disconnected": "<span font='16' rise='-5000'>睊</span>",
+  	    "tooltip-format-wifi": "📶 {essid} ({signalStrength}%)",
+  	    "tooltip-format-ethernet": "{ifname} ",
+  	    "tooltip-format-disconnected": "📶 Disconnected",
   	    "max-length": 50
     },
     "pulseaudio": {
