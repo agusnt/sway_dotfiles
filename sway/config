@@ -21,7 +21,7 @@ set $bg_picture ~/.config/sway/bg
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --show=drun --lines=5 --prompt=""
+set $menu wofi --show=drun --lines=5 --prompt="" --allow-images
 
 # Font Size
 
